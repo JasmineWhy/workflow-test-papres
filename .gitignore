@@ -1,0 +1,14 @@
+# PDF 原件不入库（体积与 arXiv 再分发授权考虑，请克隆后自行用脚本拉取）
+papers/*.pdf
+papers/*.part
+papers/*.part.*
+
+# 运行时产物
+download_log.txt
+*.part
+*.part.*
+
+# 系统杂物
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,5 +1,7 @@
 # AI 多 Agent 工作流测试：论文调研库
 
+> **GitHub 版说明**：本仓库**不含 `papers/` 的 PDF 原件**（132 MB；arXiv 论文再分发授权因文而异）。克隆后跑一条命令即可自取：`bash resume_pdfs.sh 8 480`（并发 + 断点续传，可反复执行），详见 [`papers/README.md`](papers/README.md)。文档与清单完整，不依赖 PDF。
+
 > 主题：**由 skill + agent 组成的 AI 工作流（如 ub-drv-develop）如何进行测试与评估** —— 覆盖 2023–2026 年 65 篇 arXiv 论文，按八个主题聚类组织。
 > 建立时间：2026-10-12 ｜ 检索方式：arXiv API 多路关键词检索（两批共 17 路查询）+ 人工筛选核实
 > 服务对象：ub-drv-develop 工作流的 A/B 对比测试实践（见 [02 对照文档](02-当前测试流程与论文对照.md)）
@@ -35,10 +37,12 @@ workflow测试/
 ├── 01-论文总清单.md                  ← 65 篇论文，八个主题分组，含一句话摘要与关联度
 ├── 02-当前测试流程与论文对照.md       ← 当前 A/B 测试流程还原 + 逐项论文对照
 ├── 03-论文改进点对应.md              ← 15 个改进点（论文 → 具体改法 → 落到哪个环节）
-└── all_arxiv_ids.txt                ← 全部 arXiv 编号（65 条，含分组注释）
+├── all_arxiv_ids.txt                ← 全部 arXiv 编号（65 条，含分组注释）
+├── resume_pdfs.sh                   ← ★ 并发+断点续传下载 PDF（可重入）
+└── papers/                          ← PDF 存档（本地，不入库；文件名 = arXiv ID）
 ```
 
-> 后续可扩展：`notes/` 单篇深读笔记（接入 alphaXiv MCP 后可用 `answer_pdf_queries` 逐篇精读补齐）、`papers/` PDF 存档（参考 [3D24D_paper](https://github.com/JasmineWhy/3D24D_paper) 仓库的断点续传下载脚本模式）。
+> 后续可扩展：`notes/` 单篇深读笔记（接入 alphaXiv MCP 后可用 `answer_pdf_queries` 逐篇精读补齐，参考 3D24D_paper 的「一篇一文件 + frontmatter」模式）。
 
 ---
 
